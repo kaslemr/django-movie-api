@@ -11,12 +11,12 @@ class MovieListView(ListView):
 class MovieCreateView(CreateView):
     model = Movie
     fields = ['title']
-    success_url = '/movie_list'
+    success_url = '/'
 
 
 class MovieDeleteView(DeleteView):
     model = Movie
-    success_url = '/movie_list'
+    success_url = '/'
 
 
 class MovieDetailView(DetailView):
